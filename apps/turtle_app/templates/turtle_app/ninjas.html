@@ -3,8 +3,11 @@
 	<head>
 		<meta charset="utf-8">
 		<title>Ninjas!</title>
+		<link type="text/css" rel="stylesheet" href="{% static 'turtle_app/css/style.css'}}" />
+		{% load staticfiles %}
 	</head>
 	<body>
 		<h1>Group picture!</h1>
+		<img src="{% static 'turtle_app/images/tmnt.png' %}" alt="The turtles!" />
 	</body>
 </html>

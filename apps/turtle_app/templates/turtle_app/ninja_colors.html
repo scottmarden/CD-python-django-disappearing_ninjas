@@ -3,8 +3,13 @@
 	<head>
 		<meta charset="utf-8">
 		<title>Ninjas Everywhere!</title>
+		<link type="text/css" rel="stylesheet" href="{% static 'turtle_app/css/style.css'}}" />
+		{% load staticfiles %}
 	</head>
 	<body>
 		<h1>Individual portraits!</h1>
+		{% with 'turtle_app/images/'|add:image_name|add:'.jpg' as image_static %}
+		<img src="{% static image_static %}">
+		{% endwith %}
 	</body>
 </html>
